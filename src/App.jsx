@@ -1,10 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar";
-import Login from "./Login";
-import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Navbar';
+import Login from './Login';
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Navbar />
@@ -14,6 +12,6 @@ const App = () => {
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
