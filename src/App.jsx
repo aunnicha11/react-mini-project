@@ -1,6 +1,6 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Login from "./Login";
+import React from 'react';
+import Navbar from './Navbar';
+import Login from './Login';
 
 function App() {
   return (
