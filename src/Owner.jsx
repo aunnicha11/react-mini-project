@@ -1,14 +1,22 @@
 import React from 'react';
-import mockEmployees from './mockEmployees';
-const Owner = () => {
-  const owner = mockEmployees.find(employee => employee.department === 'Engineering');
+import './App.css';
+import Navbar from './Navbar';
 
+const Owner = () => {
   return (
-    <div>
-      <h1>Owner Information</h1>
-      <p>Name: {owner.firstName} {owner.lastName}</p>
-      <p>Email: {owner.email}</p>
-      <p>Department: {owner.department}</p>
+    <div className="center-container">
+        <Navbar />
+      <h1>Louktarn - Group F - 04</h1>
+      <p>
+        <img src="../src/assets/meow.jpg" alt="Meow" />
+      </p>
+      <p>Short Biography:</p>
+      <p className="center-text">
+        Hi, I'm Aunnicha Susukpitakkul. I graduated in Economics and have about
+        a year of work experience. I used to code in PHP, JavaScript, CSS, and
+        HTML. I enjoy problem-solving through coding and aim to become a
+        software developer to bring fresh ideas to the field.
+      </p>
     </div>
   );
 };
