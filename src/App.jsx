@@ -1,14 +1,18 @@
-import React from 'react';
-import Navbar from './Navbar';
-import Login from './Login';
+import React from 'react'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from './Home.jsx';
+import Owner from './Owner';
+import Navbar from './Navbar.jsx';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Navbar />
-      <Login />
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" component={Home} />
+        <Route path="/owner" component={Owner} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
